@@ -1,25 +1,17 @@
 package com.example.demo.model.persistence;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+import lombok.NonNull;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "cart")
+@Data
 public class Cart {
 	
 	@Id
@@ -31,7 +23,8 @@ public class Cart {
 	@ManyToMany
 	@JsonProperty
 	@Column
-    private List<Item> items;
+	@NonNull
+    private List<Item> items = new ArrayList<>();
 	
 	@OneToOne(mappedBy = "cart")
 	@JsonProperty
@@ -39,59 +32,15 @@ public class Cart {
 	
 	@Column
 	@JsonProperty
-	private BigDecimal total;
-	
-	public BigDecimal getTotal() {
-		return total;
-	}
+	private BigDecimal total = BigDecimal.ZERO;
 
-	public void setTotal(BigDecimal total) {
-		this.total = total;
-	}
-
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public List<Item> getItems() {
-		return items;
-	}
-
-	public void setItems(List<Item> items) {
-		this.items = items;
-	}
-	
 	public void addItem(Item item) {
-		if(items == null) {
-			items = new ArrayList<>();
-		}
 		items.add(item);
-		if(total == null) {
-			total = new BigDecimal(0);
-		}
 		total = total.add(item.getPrice());
 	}
 	
 	public void removeItem(Item item) {
-		if(items == null) {
-			items = new ArrayList<>();
-		}
-		items.remove(item);
-		if(total == null) {
-			total = new BigDecimal(0);
-		}
-		total = total.subtract(item.getPrice());
+		boolean removed = items.remove(item);
+		total = removed ? total.subtract(item.getPrice()) : total;
 	}
 }
