@@ -1,56 +1,65 @@
 package com.example.demo.controllers;
 
-import com.example.demo.model.persistence.Cart;
-import com.example.demo.model.persistence.User;
-import com.example.demo.model.persistence.repositories.CartRepository;
-import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.CreateUserRequest;
+import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.transaction.Transactional;
+import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
 public class UserController {
 
-    private final UserRepository userRepository;
-    private final CartRepository cartRepository;
-    private final PasswordEncoder encoder;
+    private final UserService userService;
 
     @GetMapping("/id/{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id) {
-        return ResponseEntity.of(userRepository.findById(id));
+    public ResponseEntity findById(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(userService.findById(id));
+        }catch (NoSuchElementException e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
     @GetMapping("/{username}")
-    public ResponseEntity<User> findByUserName(@PathVariable String username) {
-        User user = userRepository.findByUsername(username);
-        return user == null ?
-                ResponseEntity.notFound().build() : ResponseEntity.ok(user);
+    public ResponseEntity findByUserName(@PathVariable String username) {
+        try {
+            return ResponseEntity.ok(userService.findByUsername(username));
+        }catch (NoSuchElementException e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
     @PostMapping("/create")
-    @Transactional
     public ResponseEntity createUser(@RequestBody CreateUserRequest request) {
-        if (!request.getPassword().equals(request.getConfirmPassword()))
-            return ResponseEntity.badRequest()
-                    .body("Passwords do not match");
-        if (request.getPassword().length() < 7)
-            return ResponseEntity.badRequest()
-                    .body("Password is too short");
+        ResponseEntity.BodyBuilder bad = ResponseEntity.badRequest();
+        try {
+            if (!passwordMatch(request))
+                return bad.body("Passwords do not match");
+            if (!hasMinimumLength(request))
+                return bad.body("Password is too short");
+            return ResponseEntity.ok(userService.save(
+                    request.getUsername(), request.getPassword()));
+        } catch (Exception e) {
+            return bad.body(e.getMessage());
+        }
+    }
 
-        User user = new User();
-        user.setUsername(request.getUsername());
-        user.setPassword(encoder.encode(request.getPassword()));
-        Cart car = new Cart();
+    private boolean passwordMatch(CreateUserRequest request) {
+        return request.getPassword().equals(request.getConfirmPassword());
+    }
 
-        cartRepository.save(car);
-        user.setCart(car);
-        userRepository.save(user);
-        return ResponseEntity.ok(user);
+    private boolean hasMinimumLength(CreateUserRequest request) {
+        return request.getPassword().length() > 7;
+    }
+
+    @PostMapping("/authenticate")
+    public ResponseEntity authenticate(
+            @RequestParam String username, @RequestParam String password) {
+
+        return ResponseEntity.badRequest().body("Invalid Credentials");
     }
 }
