@@ -5,10 +5,15 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.Collections;
 import java.util.NoSuchElementException;
 
 @Service
@@ -18,6 +23,7 @@ public class UserService {
     private final PasswordEncoder encoder;
     private final CartRepository cartRepository;
     private final UserRepository userRepository;
+    private final AuthenticationManager authenticationManager;
 
     public User save(String username, String password) {
         if (userRepository.existsByUsername(username))
@@ -42,5 +48,11 @@ public class UserService {
         if (user == null)
             throw new NoSuchElementException(username);
         return user;
+    }
+
+    public String authenticate(String username, String password) throws AuthenticationException {
+        Authentication auth = new UsernamePasswordAuthenticationToken(username,password, Collections.emptyList());
+        authenticationManager.authenticate(auth);
+        return null;
     }
 }

@@ -1,9 +1,11 @@
 package com.example.demo.controllers;
 
+import com.example.demo.model.requests.AuthenticationDTO.AuthenticationDTO;
 import com.example.demo.model.requests.CreateUserRequest;
 import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.NoSuchElementException;
@@ -19,7 +21,7 @@ public class UserController {
     public ResponseEntity findById(@PathVariable Long id) {
         try {
             return ResponseEntity.ok(userService.findById(id));
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
@@ -28,7 +30,7 @@ public class UserController {
     public ResponseEntity findByUserName(@PathVariable String username) {
         try {
             return ResponseEntity.ok(userService.findByUsername(username));
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
@@ -57,9 +59,12 @@ public class UserController {
     }
 
     @PostMapping("/authenticate")
-    public ResponseEntity authenticate(
-            @RequestParam String username, @RequestParam String password) {
-
-        return ResponseEntity.badRequest().body("Invalid Credentials");
+    public ResponseEntity authenticate(@RequestBody AuthenticationDTO auth) {
+        try {
+            userService.authenticate(auth.getUsername(),auth.getPassword());
+            return ResponseEntity.ok().body("jwt");
+        } catch (AuthenticationException e) {
+            return ResponseEntity.badRequest().body("Invalid Credentials");
+        }
     }
 }
