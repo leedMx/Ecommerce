@@ -11,8 +11,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
-import java.security.SecureRandom;
-import java.util.Arrays;
 
 @RestController
 @RequestMapping("/api/user")
@@ -22,7 +20,6 @@ public class UserController {
     private final UserRepository userRepository;
     private final CartRepository cartRepository;
     private final PasswordEncoder encoder;
-    private final int PASSWORD_MINIMUM_LENGTH = 7;
 
     @GetMapping("/id/{id}")
     public ResponseEntity<User> findById(@PathVariable Long id) {
@@ -38,32 +35,22 @@ public class UserController {
 
     @PostMapping("/create")
     @Transactional
-    public ResponseEntity<User> createUser(@RequestBody CreateUserRequest request) {
+    public ResponseEntity createUser(@RequestBody CreateUserRequest request) {
         if (!request.getPassword().equals(request.getConfirmPassword()))
-            throw new IllegalArgumentException("Passwords do not match");
-        if (request.getPassword().length() < PASSWORD_MINIMUM_LENGTH)
-            throw new IllegalArgumentException("Password is too short");
+            return ResponseEntity.badRequest()
+                    .body("Passwords do not match");
+        if (request.getPassword().length() < 7)
+            return ResponseEntity.badRequest()
+                    .body("Password is too short");
 
-        User user = newUser(request.getUsername(),request.getPassword());
+        User user = new User();
+        user.setUsername(request.getUsername());
+        user.setPassword(encoder.encode(request.getPassword()));
         Cart car = new Cart();
+
         cartRepository.save(car);
         user.setCart(car);
         userRepository.save(user);
         return ResponseEntity.ok(user);
-    }
-
-    private User newUser(String username, String password) {
-        String salt = createSalt();
-        User user = new User();
-        user.setUsername(username);
-        user.setSalt(salt);
-        user.setPassword(encoder.encode(password + salt));
-        return user;
-    }
-
-    private String createSalt() {
-        byte[] salt = new byte[16];
-        new SecureRandom().nextBytes(salt);
-        return Arrays.toString(salt);
     }
 }
