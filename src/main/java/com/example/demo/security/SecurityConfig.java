@@ -10,7 +10,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.web.authentication.logout.LogoutFilter;
 
 @EnableWebSecurity
 @Configuration
@@ -34,7 +33,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and().headers().frameOptions().sameOrigin()
                 .and().csrf().disable()
-                .addFilterBefore(new LoginEndPointFilter(authenticationManagerBean()), LogoutFilter.class);
+                .addFilter(new LoginEndPointFilter(authenticationManagerBean()))
+                .addFilter(new JwtAuthorizationFilter(authenticationManagerBean()));
         ;
     }
 
