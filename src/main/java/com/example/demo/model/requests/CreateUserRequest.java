@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 public class CreateUserRequest {
-	@JsonProperty
-	private String username;
-	private String password;
-	private String confirmPassword;
+    @JsonProperty
+    private String username;
+    private String password;
+    private String confirmPassword;
 }
