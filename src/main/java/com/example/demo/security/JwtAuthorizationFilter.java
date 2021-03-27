@@ -40,10 +40,10 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
     }
 
     private String getUsernameFromJwt(HttpServletRequest request) {
-        String jwt = request.getHeader("Authorization");
-        if (jwt != null && jwt.startsWith("Bearer ")) {
-            jwt = jwt.replace("Bearer ", "");
-            return JWT.require(Algorithm.HMAC512("SECRET")).build()
+        String jwt = request.getHeader(SecurityConstants.HEADER);
+        if (jwt != null && jwt.startsWith(SecurityConstants.PREFIX)) {
+            jwt = jwt.replace(SecurityConstants.PREFIX, "");
+            return JWT.require(Algorithm.HMAC512(SecurityConstants.SECRET)).build()
                     .verify(jwt).getSubject();
         }
         return "";

@@ -35,7 +35,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().csrf().disable()
                 .addFilter(new LoginEndPointFilter(authenticationManagerBean()))
                 .addFilter(new JwtAuthorizationFilter(authenticationManagerBean()));
-        ;
     }
 
     @Bean

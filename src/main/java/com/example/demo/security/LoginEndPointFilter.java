@@ -44,8 +44,8 @@ public class LoginEndPointFilter extends UsernamePasswordAuthenticationFilter {
         String jwt = JWT.create()
                 .withSubject(username)
                 .withExpiresAt(new Date(System.currentTimeMillis() + 1000 * 60 * 10))
-                .sign(Algorithm.HMAC512("SECRET"));
-        response.addHeader("Authorization", "Bearer " + jwt);
+                .sign(Algorithm.HMAC512(SecurityConstants.SECRET));
+        response.addHeader(SecurityConstants.HEADER, SecurityConstants.PREFIX + jwt);
     }
 
     private org.springframework.security.core.userdetails.User getUser(Authentication authResult) {
