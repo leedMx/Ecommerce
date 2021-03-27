@@ -1,5 +1,7 @@
 package com.example.demo.security;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -39,8 +41,11 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
 
     private String getUsernameFromJwt(HttpServletRequest request) {
         String jwt = request.getHeader("Authorization");
-        if (jwt != null && jwt.startsWith("Bearer "))
-            return jwt.replace("Bearer ", "");
+        if (jwt != null && jwt.startsWith("Bearer ")) {
+            jwt = jwt.replace("Bearer ", "");
+            return JWT.require(Algorithm.HMAC512("SECRET")).build()
+                    .verify(jwt).getSubject();
+        }
         return "";
     }
 }
