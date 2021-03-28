@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controllers;
 
 import com.example.demo.model.requests.CreateUserRequest;
 import com.example.demo.security.JwtUtils;

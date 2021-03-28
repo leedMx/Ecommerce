@@ -4,6 +4,8 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.requests.CreateUserRequest;
 import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,11 +13,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
 public class UserController {
-
+    private final static Logger log = LoggerFactory.getLogger(UserController.class);
     private final UserService userService;
 
     @GetMapping("/id/{id}")
     public ResponseEntity<?> findById(@PathVariable Long id) {
+        log.info("Looking up User by id");
         User u = userService.findById(id);
         return u == null ?
                 ResponseEntity.badRequest().body("Unknown user") :
@@ -24,6 +27,7 @@ public class UserController {
 
     @GetMapping("/{username}")
     public ResponseEntity<?> findByUserName(@PathVariable String username) {
+        log.info("Looking up User by username");
         User u = userService.findByUsername(username);
         return u == null ?
                 ResponseEntity.badRequest().body("Unknown user") :
@@ -32,6 +36,8 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<?> createUser(@RequestBody CreateUserRequest request) {
+        log.info("Attempting to create user");
+        log.debug(request.toString());
         try {
             if (!passwordMatch(request))
                 return ResponseEntity.badRequest().body("Passwords do not match");
