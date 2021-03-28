@@ -7,7 +7,9 @@ import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.ItemRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.ModifyCartRequest;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,48 +22,56 @@ import java.util.stream.IntStream;
 
 @RestController
 @RequestMapping("/api/cart")
+@RequiredArgsConstructor
 public class CartController {
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
-    private CartRepository cartRepository;
-
-    @Autowired
-    private ItemRepository itemRepository;
+    private static final Logger log = LoggerFactory.getLogger(CartController.class);
+    private final UserRepository userRepository;
+    private final CartRepository cartRepository;
+    private final ItemRepository itemRepository;
 
     @PostMapping("/addToCart")
     public ResponseEntity<Cart> addTocart(@RequestBody ModifyCartRequest request) {
         User user = userRepository.findByUsername(request.getUsername());
+        log.info("Adding item to cart");
         if (user == null) {
+            log.debug("User not found");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+        log.debug(user.toString());
         Optional<Item> item = itemRepository.findById(request.getItemId());
         if (!item.isPresent()) {
+            log.debug("Item not found");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+        log.debug(item.get().toString());
         Cart cart = user.getCart();
+        log.debug(cart.toString());
         IntStream.range(0, request.getQuantity())
                 .forEach(i -> cart.addItem(item.get()));
         cartRepository.save(cart);
+        log.info("Added item to cart");
         return ResponseEntity.ok(cart);
     }
 
     @PostMapping("/removeFromCart")
     public ResponseEntity<Cart> removeFromcart(@RequestBody ModifyCartRequest request) {
+        log.info("Removing item from cart");
         User user = userRepository.findByUsername(request.getUsername());
         if (user == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+        log.debug(user.toString());
         Optional<Item> item = itemRepository.findById(request.getItemId());
         if (!item.isPresent()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+        log.debug(item.get().toString());
         Cart cart = user.getCart();
         IntStream.range(0, request.getQuantity())
                 .forEach(i -> cart.removeItem(item.get()));
         cartRepository.save(cart);
+        log.info("Removed item from cart");
         return ResponseEntity.ok(cart);
     }
 
