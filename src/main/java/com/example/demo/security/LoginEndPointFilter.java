@@ -1,8 +1,6 @@
 package com.example.demo.security;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.algorithms.Algorithm;
-import com.example.demo.model.persistence.User;
+import com.example.demo.model.requests.AuthenticateRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,7 +14,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Date;
 
 @RequiredArgsConstructor
 public class LoginEndPointFilter extends UsernamePasswordAuthenticationFilter {
@@ -25,8 +22,8 @@ public class LoginEndPointFilter extends UsernamePasswordAuthenticationFilter {
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         try {
-            User user = new ObjectMapper()
-                    .readValue(request.getInputStream(), User.class);
+            AuthenticateRequest user = new ObjectMapper()
+                    .readValue(request.getInputStream(), AuthenticateRequest.class);
             UsernamePasswordAuthenticationToken token =
                     new UsernamePasswordAuthenticationToken(
                             user.getUsername(),
@@ -41,10 +38,7 @@ public class LoginEndPointFilter extends UsernamePasswordAuthenticationFilter {
     @Override
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
         String username = getUser(authResult).getUsername();
-        String jwt = JWT.create()
-                .withSubject(username)
-                .withExpiresAt(new Date(System.currentTimeMillis() + 1000 * 60 * 10))
-                .sign(Algorithm.HMAC512(SecurityConstants.SECRET));
+        String jwt = new JwtUtils().create(username);
         response.addHeader(SecurityConstants.HEADER, SecurityConstants.PREFIX + jwt);
     }
 
