@@ -3,6 +3,7 @@ package com.example.demo.model.persistence;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.NonNull;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -28,6 +29,7 @@ public class Cart {
 	
 	@OneToOne(mappedBy = "cart")
 	@JsonProperty
+	@ToString.Exclude
     private User user;
 	
 	@Column
