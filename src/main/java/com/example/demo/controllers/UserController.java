@@ -39,13 +39,20 @@ public class UserController {
         log.info("Attempting to create user");
         log.debug(request.toString());
         try {
-            if (!passwordMatch(request))
+            if (!passwordMatch(request)){
+                log.info("Create user failure");
                 return ResponseEntity.badRequest().body("Passwords do not match");
-            if (!hasMinimumLength(request))
+            }
+            if (!hasMinimumLength(request)){
+                log.info("Create user failure");
                 return ResponseEntity.badRequest().body("Password is too short");
+            }
+            log.info("Create user successful");
             return ResponseEntity.ok(userService.save(
                     request.getUsername(), request.getPassword()));
         } catch (Exception e) {
+            log.error(e.getMessage());
+            log.info("Create user failure");
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }

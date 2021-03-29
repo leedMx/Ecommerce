@@ -27,14 +27,21 @@ public class OrderController {
         User user = userRepository.findByUsername(username);
         if (user == null) {
             log.debug("user not found");
+            log.info("Order request failure");
             return ResponseEntity.notFound().build();
         }
-        log.debug(user.toString());
-        UserOrder order = UserOrder.createFromCart(user.getCart());
-        log.debug(order.toString());
-        orderRepository.save(order);
-        log.info("Order successfully sent");
-        return ResponseEntity.ok(order);
+        try {
+            log.debug(user.toString());
+            UserOrder order = UserOrder.createFromCart(user.getCart());
+            log.debug(order.toString());
+            orderRepository.save(order);
+            log.info("Order successfully sent");
+            return ResponseEntity.ok(order);
+        }catch (Exception e){
+            log.error(e.getMessage());
+            log.info("Order request failure");
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @GetMapping("/history/{username}")
