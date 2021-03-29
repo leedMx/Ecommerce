@@ -1,0 +1,1139 @@
+2021-03-28 17:16:35.372  INFO 7868 --- [main] c.e.demo.controllers.ActualWebAppTest    : Starting ActualWebAppTest on DELL with PID 7868 (started by Usuario in C:\Java\ecommerce)
+2021-03-28 17:16:35.372  INFO 7868 --- [main] c.e.demo.controllers.ActualWebAppTest    : No active profile set, falling back to default profiles: default
+2021-03-28 17:16:36.692  INFO 7868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-03-28 17:16:36.861  INFO 7868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 4 repository interfaces.
+2021-03-28 17:16:37.636  INFO 7868 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7c8d334] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-28 17:16:38.522  INFO 7868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-03-28 17:16:38.576  INFO 7868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-28 17:16:38.576  INFO 7868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-03-28 17:16:38.908  INFO 7868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-28 17:16:38.908  INFO 7868 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3513 ms
+2021-03-28 17:16:39.579  INFO 7868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-28 17:16:39.926  INFO 7868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-28 17:16:40.095  INFO 7868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-03-28 17:16:40.312  INFO 7868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-03-28 17:16:40.312  INFO 7868 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-03-28 17:16:40.681  INFO 7868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-03-28 17:16:41.076  INFO 7868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-28 17:16:42.950  INFO 7868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-28 17:16:45.141 DEBUG 7868 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/api/user/create']
+2021-03-28 17:16:45.141 DEBUG 7868 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/error']
+2021-03-28 17:16:45.149 DEBUG 7868 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2021-03-28 17:16:45.169 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2021-03-28 17:16:45.171 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2021-03-28 17:16:45.181  INFO 7868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7254a68a, org.springframework.security.web.context.SecurityContextPersistenceFilter@32e9c3af, org.springframework.security.web.header.HeaderWriterFilter@6a262980, org.springframework.security.web.authentication.logout.LogoutFilter@70f8d217, com.example.demo.security.LoginEndPointFilter@49f9758, com.example.demo.security.JwtAuthorizationFilter@36e98434, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c2fa57a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33bf2602, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@209b4b35, org.springframework.security.web.session.SessionManagementFilter@48a21ea6, org.springframework.security.web.access.ExceptionTranslationFilter@24558113, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f6ba47b]
+2021-03-28 17:16:46.201  INFO 7868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-28 17:16:46.373  WARN 7868 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-28 17:16:47.353  INFO 7868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2021-03-28 17:16:47.353  INFO 7868 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-28 17:16:47.391  INFO 7868 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 38 ms
+2021-03-28 17:16:47.656  INFO 7868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50707 (http) with context path ''
+2021-03-28 17:16:47.666  INFO 7868 --- [main] c.e.demo.controllers.ActualWebAppTest    : Started ActualWebAppTest in 12.876 seconds (JVM running for 15.096)
+2021-03-28 17:16:48.160 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:16:48.160 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:16:48.160 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'GET /logout'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/logout'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'PUT /logout'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'DELETE /logout'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/login'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:16:48.170 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:16:48.178 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/api/user/create'
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/create; Attributes: [permitAll]
+2021-03-28 17:16:48.180 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:16:48.191 DEBUG 7868 --- [main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@20724c21, returned: 1
+2021-03-28 17:16:48.191 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:16:48.191 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:16:48.191 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:16:48.336  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Attempting to create user
+2021-03-28 17:16:48.351 DEBUG 7868 --- [main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5e97da56
+2021-03-28 17:16:48.351 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:16:48.351 DEBUG 7868 --- [main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/id/1'; against '/logout'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/user/id/1' doesn't match 'POST /logout'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/user/id/1' doesn't match 'PUT /logout'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/user/id/1' doesn't match 'DELETE /logout'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/user/id/1' doesn't match 'POST /login'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/id/1 at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:16:48.382 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/id/1'; against '/api/user/create'
+2021-03-28 17:16:48.398 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/id/1'; against '/error'
+2021-03-28 17:16:48.398 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/id/1; Attributes: [authenticated]
+2021-03-28 17:16:48.398 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:16:48.398 DEBUG 7868 --- [main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@20724c21, returned: -1
+2021-03-28 17:16:48.398 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.example.demo.security.JwtAuthorizationFilter.doFilterInternal(JwtAuthorizationFilter.java:30) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at com.example.demo.controllers.ActualWebAppTest.testEndpointIsForbidden(ActualWebAppTest.java:79) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) ~[junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.Suite.runChild(Suite.java:128) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.Suite.runChild(Suite.java:27) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53) ~[junit-rt.jar:na]
+
+2021-03-28 17:16:48.420 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2021-03-28 17:16:48.420 DEBUG 7868 --- [main] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2021-03-28 17:16:48.420 DEBUG 7868 --- [main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5e97da56
+2021-03-28 17:16:48.420 DEBUG 7868 --- [main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'GET /logout'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/logout'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'PUT /logout'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'DELETE /logout'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/login'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/api/user/create'
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/create; Attributes: [permitAll]
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@20724c21, returned: 1
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:16:48.436 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:16:48.436  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Attempting to create user
+2021-03-28 17:16:48.552  INFO 7868 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-03-28 17:16:49.200 DEBUG 7868 --- [main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5e97da56
+2021-03-28 17:16:49.200 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:16:49.200 DEBUG 7868 --- [main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'GET /logout'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/logout'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'PUT /logout'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'DELETE /logout'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/login'
+2021-03-28 17:16:49.216 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/api/user/create'
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/create; Attributes: [permitAll]
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@20724c21, returned: 1
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:16:49.222  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Attempting to create user
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5e97da56
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:16:49.222 DEBUG 7868 --- [main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:16:49.238 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'GET /logout'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/logout'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'PUT /logout'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'DELETE /logout'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/login'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/api/user/create'
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/create; Attributes: [permitAll]
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@79d894b3: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@20724c21, returned: 1
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:16:49.254 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/user/create reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:16:49.254  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Attempting to create user
+2021-03-28 17:16:49.401 DEBUG 7868 --- [main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5e97da56
+2021-03-28 17:16:49.401 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:16:49.401 DEBUG 7868 --- [main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/item'; against '/logout'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'POST /logout'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'PUT /logout'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'DELETE /logout'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'POST /login'
+2021-03-28 17:16:49.523 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ffc9bb56: Principal: test; Credentials: [PROTECTED]; Authenticated: true; Details: null; Not granted any authorities'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@1755aee6
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/item'; against '/api/user/create'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/item'; against '/error'
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/item; Attributes: [authenticated]
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ffc9bb56: Principal: test; Credentials: [PROTECTED]; Authenticated: true; Details: null; Not granted any authorities
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@20724c21, returned: 1
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:16:49.554 DEBUG 7868 --- [main] o.s.security.web.FilterChainProxy        : /api/item reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:16:49.570  INFO 7868 --- [main] c.e.demo.controllers.ItemController      : Retrieving items
+2021-03-28 17:16:49.617 DEBUG 7868 --- [main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5e97da56
+2021-03-28 17:16:49.617 DEBUG 7868 --- [main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:16:49.617 DEBUG 7868 --- [main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:16:49.971  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Removing item from cart
+2021-03-28 17:16:49.971  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Adding item to cart
+2021-03-28 17:16:49.971  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Removing item from cart
+2021-03-28 17:16:49.971  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Adding item to cart
+2021-03-28 17:16:49.987  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Added item to cart
+2021-03-28 17:16:49.987  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Adding item to cart
+2021-03-28 17:16:49.987  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Removing item from cart
+2021-03-28 17:16:49.987  INFO 7868 --- [main] c.e.demo.controllers.CartController      : Removed item from cart
+2021-03-28 17:16:49.987  INFO 7868 --- [main] c.e.demo.controllers.ItemController      : Retrieving items
+2021-03-28 17:16:50.056  INFO 7868 --- [main] c.e.demo.controllers.OrderController     : Querying orders
+2021-03-28 17:16:50.056  INFO 7868 --- [main] c.e.demo.controllers.OrderController     : Submitting order
+2021-03-28 17:16:50.056  INFO 7868 --- [main] c.e.demo.controllers.OrderController     : Order successfully sent
+2021-03-28 17:16:50.056  INFO 7868 --- [main] c.e.demo.controllers.OrderController     : Submitting order
+2021-03-28 17:16:50.056  INFO 7868 --- [main] c.e.demo.controllers.OrderController     : Querying orders
+2021-03-28 17:16:50.103  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Looking up User by id
+2021-03-28 17:16:50.103  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Looking up User by id
+2021-03-28 17:16:50.103  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Looking up User by username
+2021-03-28 17:16:50.103  INFO 7868 --- [main] c.e.demo.controllers.UserController      : Looking up User by username
+2021-03-28 17:16:50.125  INFO 7868 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-28 17:16:50.125  INFO 7868 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-28 17:16:50.125  INFO 7868 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-28 17:16:50.140  INFO 7868 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-28 17:20:09.227  INFO 11028 --- [main] com.example.demo.ECommerceApplication    : Starting ECommerceApplication on DELL with PID 11028 (C:\Java\ecommerce\target\classes started by Usuario in C:\Java\ecommerce)
+2021-03-28 17:20:09.229  INFO 11028 --- [main] com.example.demo.ECommerceApplication    : No active profile set, falling back to default profiles: default
+2021-03-28 17:20:10.046  INFO 11028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-03-28 17:20:10.146  INFO 11028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 4 repository interfaces.
+2021-03-28 17:20:10.509  INFO 11028 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e23b0403] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-28 17:20:10.794  INFO 11028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-28 17:20:10.848  INFO 11028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-28 17:20:10.848  INFO 11028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-03-28 17:20:11.010  INFO 11028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-28 17:20:11.010  INFO 11028 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1738 ms
+2021-03-28 17:20:11.195  INFO 11028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-28 17:20:11.311  INFO 11028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-28 17:20:11.365  INFO 11028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-03-28 17:20:11.427  INFO 11028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-03-28 17:20:11.427  INFO 11028 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-03-28 17:20:11.565  INFO 11028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-03-28 17:20:11.728  INFO 11028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-28 17:20:12.615  INFO 11028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-28 17:20:13.317 DEBUG 11028 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/api/user/create']
+2021-03-28 17:20:13.317 DEBUG 11028 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/error']
+2021-03-28 17:20:13.317 DEBUG 11028 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2021-03-28 17:20:13.317 DEBUG 11028 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2021-03-28 17:20:13.317 DEBUG 11028 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2021-03-28 17:20:13.332  INFO 11028 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c02b3cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@72bce309, org.springframework.security.web.header.HeaderWriterFilter@3093b9ff, org.springframework.security.web.authentication.logout.LogoutFilter@74a03bd5, com.example.demo.security.LoginEndPointFilter@3d8fd373, com.example.demo.security.JwtAuthorizationFilter@2dcd451f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62410e1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f67ece5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@342394b3, org.springframework.security.web.session.SessionManagementFilter@379b4e86, org.springframework.security.web.access.ExceptionTranslationFilter@2ab7f649, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64dcf763]
+2021-03-28 17:20:13.502  INFO 11028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-28 17:20:13.571  WARN 11028 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-28 17:20:13.787  INFO 11028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-28 17:20:13.787  INFO 11028 --- [main] com.example.demo.ECommerceApplication    : Started ECommerceApplication in 5.043 seconds (JVM running for 6.06)
+2021-03-28 17:32:34.334  INFO 11028 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-28 17:32:34.335  INFO 11028 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-28 17:32:34.348  INFO 11028 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-03-28 17:32:34.366 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:32:34.368 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:32:34.374 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:32:34.376 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:32:34.376 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:32:34.377 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'GET /logout'
+2021-03-28 17:32:34.377 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:32:34.378 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/logout'
+2021-03-28 17:32:34.378 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:32:34.378 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'PUT /logout'
+2021-03-28 17:32:34.379 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:32:34.379 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'DELETE /logout'
+2021-03-28 17:32:34.379 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:32:34.379 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:32:34.380 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/login'
+2021-03-28 17:32:34.380 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:32:34.381 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:32:34.382 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:32:34.384 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:32:34.386 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:32:34.386 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:32:34.386 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:32:34.386 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:32:34.387 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/api/user/create'
+2021-03-28 17:32:34.387 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/create; Attributes: [permitAll]
+2021-03-28 17:32:34.388 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:32:34.396 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: 1
+2021-03-28 17:32:34.396 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:32:34.396 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:32:34.396 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /api/user/create reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:32:34.528  INFO 11028 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : Attempting to create user
+2021-03-28 17:32:34.583  INFO 11028 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-03-28 17:32:35.154 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:32:35.161 DEBUG 11028 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:32:35.162 DEBUG 11028 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:32:38.050 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:32:38.051 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:32:38.051 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:32:38.051 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:32:38.052 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:32:38.052 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'GET /logout'
+2021-03-28 17:32:38.052 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:32:38.053 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/logout'
+2021-03-28 17:32:38.053 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:32:38.053 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'PUT /logout'
+2021-03-28 17:32:38.053 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:32:38.053 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/user/create' doesn't match 'DELETE /logout'
+2021-03-28 17:32:38.053 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:32:38.054 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:32:38.054 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/login'
+2021-03-28 17:32:38.055 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:32:38.055 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:32:38.055 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:32:38.055 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:32:38.056 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:32:38.057 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:32:38.057 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:32:38.057 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:32:38.057 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/user/create'; against '/api/user/create'
+2021-03-28 17:32:38.058 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/user/create; Attributes: [permitAll]
+2021-03-28 17:32:38.058 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:32:38.059 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: 1
+2021-03-28 17:32:38.059 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2021-03-28 17:32:38.059 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2021-03-28 17:32:38.059 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /api/user/create reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:32:38.062  INFO 11028 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : Attempting to create user
+2021-03-28 17:32:38.075 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:32:38.079 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:32:38.079 DEBUG 11028 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:32:43.504 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:32:43.505 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:32:43.505 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:32:43.505 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:32:43.505 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:32:43.505 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /login' doesn't match 'GET /logout'
+2021-03-28 17:32:43.506 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:32:43.506 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2021-03-28 17:32:43.506 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:32:43.506 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /login' doesn't match 'PUT /logout'
+2021-03-28 17:32:43.506 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:32:43.507 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /login' doesn't match 'DELETE /logout'
+2021-03-28 17:32:43.507 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:32:43.507 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:32:43.507 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2021-03-28 17:32:43.511 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2021-03-28 17:32:44.011 DEBUG 11028 --- [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:32:44.012 DEBUG 11028 --- [http-nio-8080-exec-4] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:32:46.561 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:32:46.561 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /login' doesn't match 'GET /logout'
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:32:46.562 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /login' doesn't match 'PUT /logout'
+2021-03-28 17:32:46.563 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:32:46.563 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /login' doesn't match 'DELETE /logout'
+2021-03-28 17:32:46.563 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:32:46.563 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:32:46.563 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2021-03-28 17:32:46.564 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2021-03-28 17:32:46.761 DEBUG 11028 --- [http-nio-8080-exec-6] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:32:46.761 DEBUG 11028 --- [http-nio-8080-exec-6] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:33:01.591 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:33:01.592 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:33:01.592 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:33:01.592 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:33:01.592 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:33:01.592 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/order/submit/leedMx' doesn't match 'GET /logout'
+2021-03-28 17:33:01.592 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:33:01.593 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/submit/leedMx'; against '/logout'
+2021-03-28 17:33:01.593 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:33:01.593 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/order/submit/leedMx' doesn't match 'PUT /logout'
+2021-03-28 17:33:01.593 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:33:01.594 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/order/submit/leedMx' doesn't match 'DELETE /logout'
+2021-03-28 17:33:01.594 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:33:01.594 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:33:01.594 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/submit/leedMx'; against '/login'
+2021-03-28 17:33:01.594 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:33:01.595 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:33:01.595 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:33:01.595 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:33:01.595 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:33:01.596 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:33:01.596 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:33:01.596 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /api/order/submit/leedMx at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:33:01.596 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/submit/leedMx'; against '/api/user/create'
+2021-03-28 17:33:01.597 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/submit/leedMx'; against '/error'
+2021-03-28 17:33:01.597 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/order/submit/leedMx; Attributes: [authenticated]
+2021-03-28 17:33:01.597 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:33:01.598 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: -1
+2021-03-28 17:33:01.613 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.example.demo.security.JwtAuthorizationFilter.doFilterInternal(JwtAuthorizationFilter.java:30) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-03-28 17:33:01.625 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2021-03-28 17:33:01.625 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2021-03-28 17:33:01.625 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:33:01.626 DEBUG 11028 --- [http-nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:33:01.630 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:33:01.630 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /error' doesn't match 'GET /logout'
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/logout'
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:33:01.631 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /error' doesn't match 'PUT /logout'
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /error' doesn't match 'DELETE /logout'
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/login'
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:33:01.632 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:33:01.633 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:33:01.633 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:33:01.633 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:33:01.633 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:33:01.634 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:33:01.634 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:33:01.635 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /error reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:33:01.670 DEBUG 11028 --- [http-nio-8080-exec-7] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:33:01.671 DEBUG 11028 --- [http-nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:33:05.232 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:33:05.233 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:33:05.233 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:33:05.233 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:33:05.233 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:33:05.233 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/history/leedMx'; against '/logout'
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/order/history/leedMx' doesn't match 'POST /logout'
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/order/history/leedMx' doesn't match 'PUT /logout'
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/order/history/leedMx' doesn't match 'DELETE /logout'
+2021-03-28 17:33:05.234 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:33:05.235 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:33:05.235 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/order/history/leedMx' doesn't match 'POST /login'
+2021-03-28 17:33:05.235 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:33:05.235 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:33:05.235 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:33:05.235 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /api/order/history/leedMx at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/history/leedMx'; against '/api/user/create'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/order/history/leedMx'; against '/error'
+2021-03-28 17:33:05.236 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/order/history/leedMx; Attributes: [authenticated]
+2021-03-28 17:33:05.237 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:33:05.237 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: -1
+2021-03-28 17:33:05.239 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.example.demo.security.JwtAuthorizationFilter.doFilterInternal(JwtAuthorizationFilter.java:30) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-03-28 17:33:05.240 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2021-03-28 17:33:05.240 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2021-03-28 17:33:05.240 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:33:05.241 DEBUG 11028 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:33:05.241 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:33:05.241 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/logout'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /logout'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'PUT /logout'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'DELETE /logout'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /login'
+2021-03-28 17:33:05.242 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:33:05.243 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:33:05.244 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /error reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:33:05.249 DEBUG 11028 --- [http-nio-8080-exec-8] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:33:05.249 DEBUG 11028 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:33:07.987 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:33:07.988 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:33:07.988 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:33:07.988 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:33:07.988 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:33:07.989 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/item'; against '/logout'
+2021-03-28 17:33:07.989 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:33:07.989 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'POST /logout'
+2021-03-28 17:33:07.989 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:33:07.989 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'PUT /logout'
+2021-03-28 17:33:07.989 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'DELETE /logout'
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /api/item' doesn't match 'POST /login'
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:33:07.990 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /api/item at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/item'; against '/api/user/create'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/item'; against '/error'
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/item; Attributes: [authenticated]
+2021-03-28 17:33:07.991 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 17:33:07.992 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: -1
+2021-03-28 17:33:07.993 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.example.demo.security.JwtAuthorizationFilter.doFilterInternal(JwtAuthorizationFilter.java:30) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-03-28 17:33:07.994 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2021-03-28 17:33:07.995 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2021-03-28 17:33:07.995 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 17:33:07.995 DEBUG 11028 --- [http-nio-8080-exec-10] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 17:33:07.995 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/logout'
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /logout'
+2021-03-28 17:33:07.996 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'PUT /logout'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'DELETE /logout'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /login'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 17:33:07.997 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 17:33:07.998 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 17:33:07.998 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 17:33:07.998 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 17:33:07.998 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 17:33:07.998 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : /error reached end of additional filter chain; proceeding with original chain
+2021-03-28 17:33:08.002 DEBUG 11028 --- [http-nio-8080-exec-10] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 17:33:08.002 DEBUG 11028 --- [http-nio-8080-exec-10] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 20:02:52.630 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 20:02:52.650 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 20:02:52.651 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 20:02:52.651 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 20:02:52.652 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 20:02:52.654 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/logout'
+2021-03-28 20:02:52.655 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 20:02:52.655 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'POST /logout'
+2021-03-28 20:02:52.655 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 20:02:52.655 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'PUT /logout'
+2021-03-28 20:02:52.656 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 20:02:52.656 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'DELETE /logout'
+2021-03-28 20:02:52.656 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 20:02:52.656 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 20:02:52.656 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'POST /login'
+2021-03-28 20:02:52.657 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 20:02:52.658 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 20:02:52.658 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 20:02:52.659 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 20:02:52.662 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 192.168.1.66; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 20:02:52.662 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 20:02:52.662 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 20:02:52.662 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : / at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 20:02:52.665 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/api/user/create'
+2021-03-28 20:02:52.665 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/error'
+2021-03-28 20:02:52.667 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /; Attributes: [authenticated]
+2021-03-28 20:02:52.667 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 192.168.1.66; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 20:02:52.694 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: -1
+2021-03-28 20:02:52.761 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.example.demo.security.JwtAuthorizationFilter.doFilterInternal(JwtAuthorizationFilter.java:30) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-03-28 20:02:52.769 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2021-03-28 20:02:52.769 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2021-03-28 20:02:52.772 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 20:02:52.773 DEBUG 11028 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/logout'
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /logout'
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 20:02:52.775 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'PUT /logout'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'DELETE /logout'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /login'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 192.168.1.66; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 20:02:52.776 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 20:02:52.777 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 20:02:52.777 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 20:02:52.777 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /error reached end of additional filter chain; proceeding with original chain
+2021-03-28 20:02:52.872 DEBUG 11028 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 20:02:52.872 DEBUG 11028 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 20:03:11.344 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 20:03:11.344 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 20:03:11.344 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 20:03:11.344 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 20:03:11.344 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/HNAP1/'; against '/logout'
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /HNAP1/' doesn't match 'POST /logout'
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /HNAP1/' doesn't match 'PUT /logout'
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 20:03:11.345 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /HNAP1/' doesn't match 'DELETE /logout'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /HNAP1/' doesn't match 'POST /login'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 192.168.1.66; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 20:03:11.346 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 20:03:11.347 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /HNAP1/ at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 20:03:11.347 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/HNAP1/'; against '/api/user/create'
+2021-03-28 20:03:11.347 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/HNAP1/'; against '/error'
+2021-03-28 20:03:11.347 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /HNAP1/; Attributes: [authenticated]
+2021-03-28 20:03:11.347 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 192.168.1.66; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2021-03-28 20:03:11.347 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@429514cc, returned: -1
+2021-03-28 20:03:11.348 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at com.example.demo.security.JwtAuthorizationFilter.doFilterInternal(JwtAuthorizationFilter.java:30) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-03-28 20:03:11.351 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2021-03-28 20:03:11.351 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2021-03-28 20:03:11.351 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2565bc3a
+2021-03-28 20:03:11.351 DEBUG 11028 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2021-03-28 20:03:11.352 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2021-03-28 20:03:11.352 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2021-03-28 20:03:11.352 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2021-03-28 20:03:11.353 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 4 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2021-03-28 20:03:11.353 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2021-03-28 20:03:11.353 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/logout'
+2021-03-28 20:03:11.353 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2021-03-28 20:03:11.353 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /logout'
+2021-03-28 20:03:11.353 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2021-03-28 20:03:11.354 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'PUT /logout'
+2021-03-28 20:03:11.354 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2021-03-28 20:03:11.354 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'DELETE /logout'
+2021-03-28 20:03:11.354 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2021-03-28 20:03:11.354 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 5 of 12 in additional filter chain; firing Filter: 'LoginEndPointFilter'
+2021-03-28 20:03:11.354 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /error' doesn't match 'POST /login'
+2021-03-28 20:03:11.355 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 6 of 12 in additional filter chain; firing Filter: 'JwtAuthorizationFilter'
+2021-03-28 20:03:11.355 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2021-03-28 20:03:11.355 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2021-03-28 20:03:11.355 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2021-03-28 20:03:11.355 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@5556a365: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 192.168.1.66; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2021-03-28 20:03:11.355 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2021-03-28 20:03:11.356 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2021-03-28 20:03:11.356 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2021-03-28 20:03:11.356 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error reached end of additional filter chain; proceeding with original chain
+2021-03-28 20:03:11.361 DEBUG 11028 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2021-03-28 20:03:11.361 DEBUG 11028 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
