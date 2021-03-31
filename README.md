@@ -1,1 +1,1 @@
-Backend system for a car website, composed of vehicle list services, order services, pricing services and sales services, and use Java APIs and frameworks to integrate these different services using different communication styles.
+Non production eCommerce web application created in Spring Boot. Monitoring metrics for an effective analytics environment, to identify trends, as well as automate the configuration and deployment of these systems and the application. It uses Jenkins to integrate version control and deploy the application to AWS.
